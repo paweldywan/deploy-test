@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Deploy Test</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📖 About This Application</h1>
+            <p class="subtitle"><a href="/">← Back to Home</a></p>
+        </header>
+
+        <main>
+            <section class="card">
+                <h2>Project Overview</h2>
+                <p>This is a demonstration Node.js application built with Express.js and deployed to Azure App Service.</p>
+                
+                <h3>Technologies Used</h3>
+                <ul>
+                    <li><strong>Node.js</strong> - JavaScript runtime</li>
+                    <li><strong>Express.js</strong> - Web application framework</li>
+                    <li><strong>Azure App Service</strong> - Cloud hosting platform</li>
+                    <li><strong>Azure CLI</strong> - Command-line deployment tool</li>
+                    <li><strong>PowerShell</strong> - Automation and scripting</li>
+                </ul>
+            </section>
+
+            <section class="card">
+                <h2>Features</h2>
+                <ul>
+                    <li>✅ Static file serving</li>
+                    <li>✅ RESTful API endpoints</li>
+                    <li>✅ JSON data handling</li>
+                    <li>✅ Custom 404 error page</li>
+                    <li>✅ Responsive design</li>
+                    <li>✅ Interactive JavaScript functionality</li>
+                </ul>
+            </section>
+
+            <section class="card">
+                <h2>Deployment Process</h2>
+                <p>This application was deployed using a custom PowerShell script that:</p>
+                <ol>
+                    <li>Creates an Azure Resource Group</li>
+                    <li>Sets up an App Service Plan</li>
+                    <li>Creates the Web App</li>
+                    <li>Packages the application files</li>
+                    <li>Deploys via zip deployment</li>
+                </ol>
+            </section>
+
+            <section class="card">
+                <h2>Project Structure</h2>
+                <pre><code>deploy-test/
+├── index.js          # Main Express server
+├── package.json      # Node.js dependencies
+├── deploy.ps1        # Deployment script
+└── public/           # Static files
+    ├── index.html    # Home page
+    ├── about.html    # About page
+    ├── 404.html      # Error page
+    ├── styles.css    # Stylesheet
+    └── app.js        # Client-side JavaScript</code></pre>
+            </section>
+        </main>
+
+        <footer>
+            <p>Deployed with ❤️ using Azure CLI | <a href="/">Home</a></p>
+        </footer>
+    </div>
+</body>
+</html>

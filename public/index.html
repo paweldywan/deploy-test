@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deploy Test - Azure App Service</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚀 Deploy Test Application</h1>
+            <p class="subtitle">Successfully deployed to Azure App Service!</p>
+        </header>
+
+        <main>
+            <section class="card">
+                <h2>Welcome!</h2>
+                <p>This is a sample Node.js application deployed using Azure CLI and PowerShell.</p>
+                <p>The application demonstrates basic Express.js functionality with static files and API endpoints.</p>
+            </section>
+
+            <section class="card">
+                <h2>API Endpoints</h2>
+                <div class="api-list">
+                    <div class="api-item">
+                        <span class="method get">GET</span>
+                        <code>/api/info</code>
+                        <button onclick="testInfoAPI()">Test</button>
+                    </div>
+                    <div class="api-item">
+                        <span class="method get">GET</span>
+                        <code>/api/greet/:name</code>
+                        <button onclick="testGreetAPI()">Test</button>
+                    </div>
+                    <div class="api-item">
+                        <span class="method post">POST</span>
+                        <code>/api/echo</code>
+                        <button onclick="testEchoAPI()">Test</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2>Interactive Demo</h2>
+                <div class="demo-form">
+                    <input type="text" id="nameInput" placeholder="Enter your name" value="World">
+                    <button onclick="greetUser()" class="btn-primary">Greet Me</button>
+                </div>
+                <div id="result" class="result"></div>
+            </section>
+
+            <section class="card info-section">
+                <h2>System Information</h2>
+                <div id="systemInfo" class="system-info">
+                    <p>Loading system information...</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Deployed with ❤️ using Azure CLI | <a href="/about.html">About</a></p>
+        </footer>
+    </div>
+
+    <script src="/app.js"></script>
+</body>
+</html>
